@@ -13,7 +13,8 @@ export function Auth() {
   const [email, setemail] = useState("")
   const [password, setpassword] = useState("")
   const [pic, setpic] = useState<File | null>(null)
-
+  const SERVER_URL = import.meta.env.VITE_BACKEND_SERVER
+  
   const successmsg = (msg: string) => {
     toast.success(msg, {
       icon: "👏",
@@ -36,7 +37,7 @@ export function Auth() {
   Formdata.append("password", password)
   if (pic) Formdata.append("avatar", pic)
     const handleGoogleLogin = () => {
-  window.location.href = "http://localhost:3000/auth/google";
+  window.location.href = `${SERVER_URL}/auth/google`;
 };
 
   const handleAuth = async (e: React.FormEvent) => {
