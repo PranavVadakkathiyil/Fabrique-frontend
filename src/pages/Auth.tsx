@@ -36,7 +36,7 @@ export function Auth() {
   Formdata.append("password", password)
   if (pic) Formdata.append("avatar", pic)
     const handleGoogleLogin = () => {
-  window.location.href = `https://fabrique-backend.vercel.app/auth/google/callback`;
+  window.location.href = `https://fabrique-backend.vercel.app/auth/google`;
 };
 
   const handleAuth = async (e: React.FormEvent) => {
