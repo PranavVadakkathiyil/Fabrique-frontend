@@ -13,7 +13,6 @@ export function Auth() {
   const [email, setemail] = useState("")
   const [password, setpassword] = useState("")
   const [pic, setpic] = useState<File | null>(null)
-  const SERVER_URL = import.meta.env.VITE_BACKEND_SERVER
   
   const successmsg = (msg: string) => {
     toast.success(msg, {
@@ -37,7 +36,7 @@ export function Auth() {
   Formdata.append("password", password)
   if (pic) Formdata.append("avatar", pic)
     const handleGoogleLogin = () => {
-  window.location.href = `https://fabrique-backend.vercel.app/auth/google`;
+  window.location.href = `https://fabrique-backend.vercel.app/auth/google/callback`;
 };
 
   const handleAuth = async (e: React.FormEvent) => {
