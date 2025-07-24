@@ -1,6 +1,5 @@
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import CustomerReview from "../../components/user/CustomerReview";
-import ReviewCard from "../../components/ReviewCard";
+
 import TopSelling from "../../components/user/TopSelling";
 import NewArrivels from "../../components/user/NewArrivels";
 import { useParams } from "react-router-dom";
@@ -8,7 +7,6 @@ import { useEffect, useState } from "react";
 import { GetSingleProduct } from "../../apis/productapi";
 import ProductViewLoading from "../../components/Loading/ProductViewLoading";
 import toast from "react-hot-toast"
-import { Loader2 } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 
 import { AddToCart } from "../../apis/cartapi";
@@ -31,7 +29,6 @@ function ProductView() {
     const [productcount, setproductcount] = useState<number>(1)
     const [color, setcolor] = useState<string>("")
     const [size, setsize] = useState<string>('')
-    const [search, setsearch] = useState<string>("")
     const [activeimg, setactiveimg] = useState("")
 
     const navigate = useNavigate()

@@ -1,5 +1,4 @@
 // src/components/Loading/ProductLoader.tsx
-import React from "react";
 
 const ProductLoader = () => {
   return (

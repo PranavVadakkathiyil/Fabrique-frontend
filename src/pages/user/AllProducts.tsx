@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import ProductCard from "../../components/user/ProductCard";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import {  useNavigate, useParams } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavContext } from "../../context/NavContext";
 import { FilterProduct, GetAllProduct, SearchProducts } from "../../apis/productapi";
@@ -39,7 +39,7 @@ const AllProducts = () => {
     const [selectedSelling, setSelectedSelling] = useState<string>("");
     const [selectedRating, setSelectedRating] = useState<number | null>(null);
     const [count, setcount] = useState(0)
-    const [limit, setlimit] = useState(12)
+    const [limit, _setlimit] = useState(12)
     const [page, setpage] = useState(0)
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);

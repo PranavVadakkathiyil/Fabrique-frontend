@@ -5,7 +5,7 @@ import { IoMdContact } from "react-icons/io";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { useNavContext } from "../../context/NavContext";
-import { getCurrentUserInfo, Logout } from "../../apis/authapi";
+import {  Logout } from "../../apis/authapi";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -16,7 +16,7 @@ const navLinks = [
 ];
 
 const UserNav = () => {
-  const { userNav, setuserNav,setCartCount,cartCount,fetchUserInfo,userdata,setuserdata } = useNavContext();
+  const { userNav, setuserNav,cartCount,fetchUserInfo,userdata } = useNavContext();
   
   
   const [showDropdown, setShowDropdown] = useState(false);

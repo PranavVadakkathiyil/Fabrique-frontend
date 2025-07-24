@@ -15,7 +15,7 @@ const ChatPopup: React.FC<ChatPopupProps> = ({ chat, onClose }) => {
   const [messages, setMessages] = useState<any[]>([]);
   const [message, setMessage] = useState('');
   const [userId, setUserId] = useState('');
-  const [socketconn, setsocketconn] = useState(false)
+  const [_socketconn, setsocketconn] = useState(false)
   const socketRef = useRef<Socket | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 

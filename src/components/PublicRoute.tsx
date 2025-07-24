@@ -3,7 +3,7 @@ import { Navigate, Outlet } from 'react-router-dom';
 import { validateUser } from '../apis/authapi';
 
 const PublicRoute = () => {
-  const [roles, setRoles] = useState<string | null>(null);
+  const [_roles, setRoles] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const ValidateUser = async () => {

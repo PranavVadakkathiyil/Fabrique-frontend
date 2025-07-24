@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoMdContact } from "react-icons/io"
-import { MdOutlineShoppingBag } from "react-icons/md"
 import { Link, useNavigate } from "react-router-dom"
 import { useNavContext } from "../../context/NavContext"
 import { getCurrentSellerInfo, Logout } from "../../apis/authapi"; 
@@ -26,7 +25,7 @@ type SellerData = {
 const SellerHeader = () => {
   const { sellerNav, setsellerNav } = useNavContext();
   const [sellerdata, setsellerdata] = useState<SellerData | null>(null)
-  const [ordercount, setordercount] = useState(0)
+  const [_ordercount, setordercount] = useState(0)
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate()
   useEffect(() => {

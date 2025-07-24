@@ -1,4 +1,3 @@
-import { FiSearch } from "react-icons/fi";
 import { IoClose } from "react-icons/io5"
 import { Link } from "react-router-dom"
 import { useNavContext } from "../../context/NavContext";

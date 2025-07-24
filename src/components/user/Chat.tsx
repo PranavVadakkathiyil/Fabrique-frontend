@@ -26,7 +26,7 @@ const Chat: React.FC<ChatProps> = ({
 }) => {
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState<any[]>([]);
-    const [socketconn, setsocketconn] = useState(false)
+    const [_socketconn, setsocketconn] = useState(false)
     const socketRef = useRef<Socket | null>(null);
     const bottomRef = useRef<HTMLDivElement>(null);
     const handleSendMessage = async () => {

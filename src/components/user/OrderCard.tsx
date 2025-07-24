@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import toast from "react-hot-toast";
 import { BsFillChatDotsFill } from "react-icons/bs";

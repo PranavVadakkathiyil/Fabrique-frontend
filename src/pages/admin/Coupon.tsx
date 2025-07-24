@@ -72,7 +72,7 @@ const Coupon = () => {
 
   const blockCoupons = async (couponId: string) => {
     try {
-      const res = await blockCoupon(couponId);
+       await blockCoupon(couponId);
       getcoupons();
     } catch (error) {
       console.log(error);
