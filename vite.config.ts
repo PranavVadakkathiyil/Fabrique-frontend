@@ -11,8 +11,8 @@ export default defineConfig({
   server: {
     host: true, // Enable access via local IP
     port: 5173,
-     proxy:{
-      '/api':"https://fabrique-backend.vercel.app"
-    } // or any port you prefer
+    //  proxy:{
+    //   '/api':"https://fabrique-backend.vercel.app"
+    // } // or any port you prefer
   },
 })
