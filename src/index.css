@@ -1,0 +1,39 @@
+@import "tailwindcss";
+/*font-family: 'Anton', 'Inter', 'Nunito', 'Outfit', 'Poppins', 'Roboto', 'Space Grotesk', 'Work Sans', sans-serif;*/
+
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+@import "swiper/css";
+@import "swiper/css/effect-coverflow";
+.swiper-pagination-bullet-active {
+     background-color: gainsboro !important;
+}
+.swiper-pagination-bullet {
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+}
+.header-logo{
+    font-family: 'Anton',sans-serif ;
+    font-size: x-large;
+    
+}
+*{
+    font-family:'Outfit',sans-serif ;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.footer-logo{
+    font-family: 'Poppins:ital',sans-serif ;
+    font-weight: 800;
+    font-size: xx-large;
+}
+.footer-content{
+    font-family: 'Noto Sans KR',sans-serif ;
+    color: #6c757d;
+    font-size: small;
+    
+}
+.footer-icon{
+    @apply border rounded-2xl p-2
+}
